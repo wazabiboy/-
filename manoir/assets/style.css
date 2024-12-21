@@ -1,0 +1,123 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 1s ease-in-out; /* Pour une transition douce */
+  }
+  
+  .page2 {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://www.laboiteverte.fr/wp-content/uploads/2014/10/gif-abstrait-boucle-02.gif);
+      background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+
+  .page3 {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://cdn.britannica.com/93/240793-138-69567C00/Edvard-Munch-The-Scream.jpg);
+  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .page4 {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://images5.alphacoders.com/482/482725.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .page5 {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://escapegame.imgix.net/62/62c6b9fe39164043082789.jpeg?auto=format,compress&ch=Width,DPR&fp-x=0.46&fp-y=0.46&crop=focalpoint&fit=crop);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .page6 {
+    background-color: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-image: url(https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb48878c3-2ef5-4beb-9c83-ceb639114a10_1280x720.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  h1 {
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+  a {
+    color: lightblue;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  table td {
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+
+/* Indice caché dans une classe */
+.hidden-clue::before {
+  content: "Le mot de passe est:  6A 61 76 61 73 63 72 69 70 74 ";
+  display: none;
+}
+
+ 
+
+.hidden-indicator {
+  color: #1c1c1c; /* Texte caché sur fond noir */
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Manoir Hanté - Grille Mystère</title>
+  <link rel="icon" href="assets/film-dhorreur.png" type="image/png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body  class="page3">
+  <h1>Trouvez le mot caché dans la grille !</h1>
+  <p>Un cri résonne, perçant la nuit, </p>
+  <p>Comme un frisson dans l'éternelle folie. </p>
+  <p>Cherchez le mot, tel un hurlement,</p>
+  <p>Le titre d'un film, terrifiant moment.</p>
+
+  <table>
+    <tr>
+      <td>S</td><td>C</td><td>R</td><td>Y</td>
+    </tr>
+    <tr>
+      <td>T</td><td>R</td><td>E</td><td>A</td>
+    </tr>
+    <tr>
+      <td>R</td><td>A</td><td>C</td><td>S</td>
+    </tr>
+    <tr>
+      <td>E</td><td>P</td><td>R</td><td>R</td>
+    </tr>
+  </table>
+
+  <form id="gridForm">
+    <label for="gridInput">Entrez le mot trouvé : </label>
+    <input type="text" id="gridInput" required />
+    <button type="submit">Valider</button>
+  </form>
+
+  <p id="feedback"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>

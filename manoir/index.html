@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manoir Hanté</title>
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+  <h1>Bienvenue dans le Manoir Hanté !</h1>
+  <p>Résolvez les énigmes pour avancer dans le jeu.</p>
+
+
+  <script>
+    console.log(
+      "Bienvenue dans le jeu de piste ! L'indice suivant est caché dans une balise HTML. À vous de chercher !"
+    );
+  </script>
+
+  <div class="hidden-clue" data-next="Regardez dans le fichier CSS."></div>
+   
+  <!-- Formulaire pour valider la réponse -->
+  <form id="charadeForm">
+    <label for="charadeInput">Entrez la réponse finale : </label>
+    <input type="text" id="charadeInput" required placeholder="Réponse..." />
+    <button type="submit">Valider</button>
+  </form>
+
+  <p id="feedback"></p>
+
+  <script>
+    // Liste des images de fond
+    const backgrounds = [
+      "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTJwcjl4bnp0N3EzMHoyMWV1cDRjcXY4eWM0bWdxd3c4aTM5bDJsdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zOvBKUUEERdNm/200.webp",
+      "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExam1ocnJidmNjd28xMHM4ZzRmMHl0MWcwNWh0YWRyZWszeHR0dmh3dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13HgwGsXF0aiGY/giphy.webp",
+      "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmF5a3RpaDJhODg1Zm16aW9qbXVoaGtpbThocXZkMDFhcGw5cTlwcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dlMIwDQAxXn1K/giphy.webp"
+    ];
+
+    let currentIndex = 0; // Commence avec la première image
+
+    // Fonction pour changer le fond d'écran toutes les 2 minutes
+    function changeBackground() {
+      document.body.style.backgroundImage = `url(${backgrounds[currentIndex]})`;
+      currentIndex = (currentIndex + 1) % backgrounds.length; 
+
+
+      if (currentIndex === 0) {
+        setTimeout(() => {
+          document.body.style.backgroundImage = `url(${backgrounds[2]})`;
+        }, 2000);  
+      }
+    }
+
+    // Initialiser le changement d'image
+    changeBackground();
+    setInterval(changeBackground, 12000); 
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

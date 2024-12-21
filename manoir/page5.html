@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Manoir Hanté - La Dev</title>
+  <link rel="icon" href="assets/film-dhorreur.png" type="image/png">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    /* Animation pour faire clignoter le texte */
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .page5 {
+      background-color: black;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-image: url('https://escapegame.imgix.net/62/62c6b9fe39164043082789.jpeg?auto=format,compress&ch=Width,DPR&fp-x=0.46&fp-y=0.46&crop=focalpoint&fit=crop');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      animation: changeBackground 3s infinite; /* Change background every 3 seconds */
+      animation-timing-function: ease-in-out;
+    }
+
+    /* Animation pour le clignotement du texte */
+    body {
+      animation: blink 1s infinite;
+    }
+
+    /* Ajoutez cette règle pour un fond clignotant plus dynamique */
+    .page5 h1, .page5 p, .page5 ul, .page5 form {
+      animation: blink 1s infinite;
+    }
+
+    /* Pour que l'effet clignotant ne soit pas trop agressif */
+    .page5 p, .page5 h1, .page5 ul, .page5 form {
+      opacity: 1;
+      transition: opacity 1s ease-in-out;
+    }
+
+    /* Pour les couleurs de fond de texte */
+    .blink {
+      animation: blink 6s infinite;
+    }
+
+    /* Animation pour changer l'arrière-plan toutes les 3 secondes */
+    @keyframes changeBackground {
+      0% { background-image: url('https://escapegame.imgix.net/62/62c6b9fe39164043082789.jpeg?auto=format,compress&ch=Width,DPR&fp-x=0.46&fp-y=0.46&crop=focalpoint&fit=crop'); }
+      33% { background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWoyd3gxbmJlM2xwanZtZDR2N3plYjk1a2prYnV4YWhmb3BzaWN6ayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QLiqUx7aHg10bl5FVj/giphy.webp'); } /* Remplacez par votre image */
+      66% { background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjFnczB6N2VjbzNsYXUycWlhdzFsZHUyN3h6MDBmejFsNDl5cWVseiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/KXco3gw03pCXJQBZe4/giphy.webp'); } /* Remplacez par une autre image */
+     100% { background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjI5MGZqN2F5MW56c3V2YXA5bHMyZHRuMTJiYjY2djgwOGRsdDh4NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TGHXd9J6mK6sM/200.webp'); }
+    }
+  </style>
+</head>
+<body class="page5">
+
+  <h1>Défi du Script</h1>
+  <p>Résolvez cette charade pour débloquer l’accès à la prochaine salle :</p>
+
+  <blockquote>
+    Mon premier ouvre la fenêtre au loin, <br>
+    Un regard jeté vers le prochain chemin.<br>
+    Mon deuxième invite au changement,<br>
+    Une commande douce, un mouvement. <br>
+    Mon tout, tracé en deux lignes légères,<br>
+    Te mène là où commence une autre ère.
+  </blockquote>
+
+  <p><strong>Indices :</strong></p>
+  <ul>
+    <li><strong>Indice 1 :</strong> L'un des mots dans la charade fait référence à un élément très commun en JavaScript.</li>
+    <li><strong>Indice 2 :</strong> Cherchez bien dans le code source du script... Une petite ligne vous donne la réponse, si vous savez où regarder.</li>
+    <li><strong>Indice 3 :</strong> "Deux lignes légères" dans la charade peut être une métaphore pour un bloc de code simple et précis.</li>
+    <li><strong>Indice 4 :</strong> Si vous êtes perdu, souvenez-vous que "location.href" est un indice clé pour savoir où vous allez.</li>
+    <li><strong>Indice 5 :</strong> Le navigateur vous montre l'URL qui est modifiée. Cela pourrait être un indice pour comprendre le comportement du script.</li>
+  </ul>
+
+  <p>Conseil : Regardez aussi la console de votre navigateur pour d'autres indices dissimulés...</p>
+
+  <form id="charadeForm">
+    <label for="charadeInput">Écrivez le script complet :</label>
+    <textarea id="charadeInput" rows="3" placeholder="Écrivez ici votre réponse"></textarea>
+    <button type="submit">Valider</button>
+  </form>
+
+  <p id="feedback"></p>
+ 
+  <script>
+    // Indice supplémentaire pour les plus observateurs
+    console.log("Le script vous guidera vers la page suivante dès que vous résolvez le défi. ");
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

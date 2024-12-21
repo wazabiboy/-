@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Manoir Hanté - Le Code Secret</title>
+  <link rel="icon" href="assets/film-dhorreur.png" type="image/png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="page2">
+  <h1>Un murmure résonne dans l'obscurité...</h1>
+  <p>Plongez dans l'ombre, au cœur du secret,<br>
+    Là où la toile numérique est prête,<br>
+    Le chemin se tisse quand l'URL se déguise,<br>
+    Cherchez la clé là où l'insecte s'épuise.</p>
+  <p><em>Indice :</em> parfois, le chemin n’est visible que si vous regardez en haut de la fenêtre...</p>
+
+  <!-- Indice caché en bas de la page -->
+  <div style="visibility: hidden;">L’URL n’est pas figée, le ciel vous guidera vers "page3.html".</div>
+
+  <form id="fakeForm">
+    <label for="fakeInput">Entrez un code ici  :</label>
+    <input type="text" id="fakeInput" placeholder="">
+    <button type="submit">Valider</button>
+  </form>
+  <script>
+    document.getElementById("fakeForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Ce n'est pas ici... Cherchez ailleurs ! "  );
+    });
+  </script>
+  
+
+ 
+  <script>
+    console.log(
+      "%cL’indice est dans l’URL, Oui on peut  mettre du syle sur la console ",
+      "background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);color :black ; font-size: 24px;border-radius: 12px"
+    );
+
+    console.log(
+      "Astuce : Observez attentivement la structure de l'URL. Parfois, la solution est juste sous vos yeux..."
+    );
+  </script>
+</body>
+</html>
